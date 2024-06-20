@@ -21,7 +21,3 @@ def extract_features(audio_path):
     ))
 
     return feature_vector
-
-
-if __name__ == "__main__":
-    print(extract_features(os.path.join('..', 'data', 'audios', 'audio.wav')))
