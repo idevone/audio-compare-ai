@@ -5,6 +5,7 @@ def create_connection():  # ! Create connection to database
     conn = sqlite3.connect('database.db')
     return conn
 
+
 def create_table():  # ! Create table for audios
     conn = create_connection()  # ! Create connection
     cursor = conn.cursor()  # ! Create cursor
@@ -45,4 +46,3 @@ def get_audios():  # ! Get all audios from database
     audios = cursor.fetchall()
     conn.close()  # ! Close connection
     return audios
-

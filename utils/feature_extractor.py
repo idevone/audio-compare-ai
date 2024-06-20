@@ -2,6 +2,7 @@ import librosa as lr
 import numpy as np
 import os
 
+
 def extract_features(audio_path):
     y, sr = lr.load(audio_path)
 
@@ -23,4 +24,4 @@ def extract_features(audio_path):
 
 
 if __name__ == "__main__":
-    print(extract_features(os.path.join('..', 'data', 'audios', 'audio_test.wav')))
+    print(extract_features(os.path.join('..', 'data', 'audios', 'audio.wav')))
